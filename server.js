@@ -20,7 +20,6 @@ app.get("/exec", function (req, res) {
     exec(command, function (error, stdout, stderr) {
         if (error === null) {
             res.header("Content-Type", "application/json");
-            //res.end(JSON.stringify(stdout, null, "\t"), "utf-8");
             res.end(stdout);
         }
     });

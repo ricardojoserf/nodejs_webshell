@@ -8,13 +8,6 @@ function mainController($scope, $http) {
     
     $scope.submit = function(){
 		
-        /*
-        $http({
-            url: "/exec", 
-            method: "GET",
-            params: {username: $scope.username, password: $scope.password }
-         });*/
-  
         $http.get('/exec', { params:  {username: $scope.username, password: $scope.password } } )
             .success(
             	function(response) {
