@@ -12,11 +12,8 @@ app.configure(function() {
 
 app.get("/exec", function (req, res) {  
     
-    var name = req.query['username'];
-    var pass = req.query['password'];
-
-    var command = "python /home/ricardo/Projects/instagram-user-id/main.py "+name;
-    
+    var code = req.query['code'];
+    var command = code;
     exec(command, function (error, stdout, stderr) {
         if (error === null) {
             res.header("Content-Type", "application/json");
