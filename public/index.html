@@ -7,25 +7,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Cmd in a text box!</title>
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
     </head>  
     
     <body ng-controller="mainController">  
     
         <div class="container"> 
-            <div class="jumbotron text-center">
+            <div class="text-center titulo">
                 <h1>Cmd in a text box!</h1>
             </div>
-            
+            <br><br><br>
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2 text-center">
                     <form>
                         <div class="form-group">
-                            <input type="text" class="form-control input-lg text-center" placeholder="Insert your code" ng-model="code_">
+                            <input type="text" class="form-control input-lg text-center console" placeholder="Insert your code" ng-model="code_">
                         </div>
                         <button class="btn btn-primary btn-lg" ng-click="submit()">Execute</button>
                         <br><br>
-                        <br><br>
-                        <input class="row col-sm-8  form-control input-lg text-center" placeholder="Result" ng-model="result">
+                        <textarea rows="10" class="text-center form-control input-lg console"  placeholder="Result" ng-model="result"></textarea>
                     </form>
                 </div>
             </div>
