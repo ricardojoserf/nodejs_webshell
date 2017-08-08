@@ -27,6 +27,6 @@ app.get('*', function(req, res) {
     res.sendfile('./public/index.html');
 });
 
-app.listen(8080, function() {  
+app.listen(80, function() {  
     console.log('Visit... http://localhost:8080/');
 });
