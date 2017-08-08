@@ -18,15 +18,23 @@ app.get("/exec", function (req, res) {
         if (error === null) {
             res.header("Content-Type", "application/json");
             res.end(stdout);
+			// res.end(stderr);
         }
+		else{
+			res.header("Content-Type", "application/json");
+            // res.end(stdout);
+			res.end(stderr);
+		}
     });
 
 });
+
 
 app.get('*', function(req, res) {  
     res.sendfile('./public/index.html');
 });
 
-app.listen(80, function() {  
+
+app.listen(8080, function() {  
     console.log('Visit... http://localhost:8080/');
 });
