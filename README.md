@@ -2,7 +2,7 @@
 
 Cmd in a text box! Technologies: AngularJS + Node.js + Express module
 
-![Screenshot](angularcmd.png)
+![Screenshot](img/Screenshot.png)
 
 
 
